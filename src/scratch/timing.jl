@@ -1,4 +1,4 @@
-using Unpack
+using Destruct
 using BenchmarkTools
 
 function unpack_bc(w::Array{<:Tuple})
@@ -18,7 +18,7 @@ unpacked = (a_1, a_2, a_3)
 packed = collect(zip(a_1, a_2, a_3))
 
 @assert unpack_bc(packed) == unpacked
-@assert unpack(packed) == unpacked
+@assert destruct(packed) == unpacked
 
 println("Array of NTuple")
 println("---------------")
@@ -29,7 +29,7 @@ for sz=[10 100 200]
     println("broadcast")
     @btime unpack_bc($packed)
     println("cartesian")
-    @btime unpack($packed)
+    @btime destruct($packed)
     println("")
 end
 println("Array of Tuple")
@@ -41,6 +41,6 @@ for sz=[10 100 200]
     println("broadcast")
     @btime unpack_bc($packed)
     println("cartesian")
-    @btime unpack($packed)
+    @btime destruct($packed)
     println("")
 end

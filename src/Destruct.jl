@@ -32,8 +32,8 @@ julia> x, y, z = f.(rand(100,1,1), rand(1,100,100)) |> destruct;
     M = length(TT)
     quote
         @nexprs $M i -> out_i = similar(v,$TT[i])
-        @inbounds @nloops $N j v begin
-            @nexprs $M i -> ((@nref $N out_i j) = (@nref $N v j)[i])
+        @inbounds for j in eachindex(v)
+            @nexprs $M i -> (out_i[j] = v[j][i])
         end
         return @ntuple $M out
     end
