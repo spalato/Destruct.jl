@@ -1,7 +1,10 @@
-# Destruct.jl
+# Destruct.jl 
+[![Build Status](https://travis-ci.org/spalato/Destruct.jl.svg?branch=master)](https://travis-ci.org/spalato/Destruct.jl)
+
 Destructuring arrays of tuples in Julia (v0.6).
 
 ## Overview
+
 Using julia's 'dot-call' syntax on functions with multiple return arguments
 results in an array of tuples. Sometimes, you want the tuple of arrays instead,
 preserving array shape.
