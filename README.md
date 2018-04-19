@@ -1,7 +1,9 @@
 # Destruct.jl 
 [![Build Status](https://travis-ci.org/spalato/Destruct.jl.svg?branch=master)](https://travis-ci.org/spalato/Destruct.jl)
+[![PkgEval.jl Status on Julia 0.6](http://pkg.julialang.org/badges/Destruct_0.6.svg)](http://pkg.julialang.org/?pkg=Destruct&ver=0.6)
+[![PkgEval.jl Status on Julia 0.7](http://pkg.julialang.org/badges/Destruct_0.7.svg)](http://pkg.julialang.org/?pkg=Destruct&ver=0.7)
 
-Destructuring arrays of tuples in Julia (v0.6).
+Destructuring arrays of tuples in Julia.
 
 ## Overview
 
@@ -12,6 +14,8 @@ This can be achieved using `destruct`, which converts an array of tuple to a
 tuple of arrays.
 
 Works with any tuples (ie: with elements of different types).
+
+This single function doesn't really require it's package, maybe you can find it a better home.
 
 ## Example
 ```julia
