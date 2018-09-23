@@ -1,9 +1,9 @@
 using Destruct
-using Base.Test
-import Base.rand
+using Compat.Test
+import Compat.rand
 
 rand(rng::AbstractRNG, T::Type{String}) = randstring(rng)
-types = [Int32, Float64, Complex128, Bool]
+types = [Int32, Float64, Complex{Float64}, Bool]
 
 @testset "NTuple" begin
 for T=types, N=[1,2,3,4,5]
