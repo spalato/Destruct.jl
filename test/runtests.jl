@@ -1,5 +1,6 @@
 using Destruct
 using Compat.Test
+using Compat.Random
 import Compat.rand
 
 rand(rng::AbstractRNG, T::Type{String}) = randstring(rng)

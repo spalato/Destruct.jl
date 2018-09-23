@@ -26,7 +26,6 @@ julia> @btime destruct(v);
 julia> x, y, z = f.(rand(100,1,1), rand(1,100,100)) |> destruct;
 ```
 """
-# TODO: get rit of nloops, use eachindex instead.
 @generated function destruct(v::Array{T,N}) where {T <: Tuple, N}
     TT = T.types
     M = length(TT)
