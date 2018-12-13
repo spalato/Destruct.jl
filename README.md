@@ -1,9 +1,7 @@
 # Destruct.jl 
 [![Build Status](https://travis-ci.org/spalato/Destruct.jl.svg?branch=master)](https://travis-ci.org/spalato/Destruct.jl)
-[![PkgEval.jl Status on Julia 0.6](http://pkg.julialang.org/badges/Destruct_0.6.svg)](http://pkg.julialang.org/?pkg=Destruct&ver=0.6)
-[![PkgEval.jl Status on Julia 0.7](http://pkg.julialang.org/badges/Destruct_0.7.svg)](http://pkg.julialang.org/?pkg=Destruct&ver=0.7)
 
-Destructuring arrays of tuples in Julia. Should work in Julia 0.6 - 1.0.
+Destructuring arrays of tuples in Julia.
 
 ## Overview
 
