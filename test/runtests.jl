@@ -1,7 +1,7 @@
 using Destruct
-using Compat.Test
-using Compat.Random
-import Compat.rand
+using Test
+using Random
+import Random.rand
 
 rand(rng::AbstractRNG, T::Type{String}) = randstring(rng)
 types = [Int32, Float64, Complex{Float64}, Bool]
